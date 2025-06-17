@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+#map {
+    height: calc(100vh - 90px);
+    margin-top: 90px;
+}
+
+
+.cabecalho {
+    background: linear-gradient(90deg, #1C8F44 0%, #34A853 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.menuCentralConfig {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+
+
+.cabecalho img {
+    height: 75px;
+    border-radius: 20px;
+    margin-top: 2px;
+}
+
+.linhaHorizontal {
+    height: 1px;
+    background-color: black;
+}
+
+.linhaVertical {
+    width: 2px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1px;
+}
+
+
+.menuCentral {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menuCentral a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #34A853;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menuCentral a:hover {
+    background-color: #2c8e47;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.infoBar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    border: 2px solid #1C8F44;
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.infoBar input {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.infoBar button {
+    padding: 5px 10px;
+    background-color: #1C8F44;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.infoBar button:hover {
+    background-color: #145c2d;
+}
+
+
+
+
+.textregra {
+    max-width: 750px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    background-color: rgb(189, 255, 189);
+    border-left: 4px solid #005b05;
+    border-radius: 8px;
+    font-size: larger;
+}
+
+
+.textregra h1 {
+    text-align: center;
+    color: #fe3131;
+    margin-top: 15px;
+}
+
+.textregra h2 {
+    color: #fe3131;
+}
+
+.textregra li,
+.textregra ul {
+    list-style: none;
+}
+
+.QNS {
+    margin-top: 100px;
+    margin-left: 255px;
+    font-size: large;
+}
+
+.imagemfoda {
+    position: absolute;
+    top: 182px;
+    right: 20px;
+    width: 650px;
+}
+
+.imagemfoda img {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+}
+
+
+
+
+.rodape {
+    background-color: #1C8F44;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.rodape p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.linksRodape {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.linksRodape a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.linksRodape a:hover {
+    text-decoration: underline;
+    color: #bfffc7;
+}
+
+
+.configIcon img {
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.configIcon img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.notificacoesMain {
+    margin-top: 120px;
+    padding: 20px;
+    flex: 1;
+}
+
+.notificacoesMain h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1C8F44;
+}
+
+.notificacoesContainer {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notificacoesContainer h2 {
+    color: black
+}
+
+.notificacao {
+    background-color: #dbffd9;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.notificacao small {
+    display: block;
+    color: #555;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .menuCentral {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
