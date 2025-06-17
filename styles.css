@@ -179,9 +179,9 @@ header {
     text-align: center;
     padding: 20px 10px;
     width: 100%;
-    position: absolute;
+    margin-top: 20px;
     bottom: 0;
-    z-index: 1000;
+    z-index: 0;
 }
 
 .rodape p {
@@ -207,6 +207,8 @@ header {
     text-decoration: underline;
     color: #bfffc7;
 }
+
+
 
 
 .configIcon img {
